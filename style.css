@@ -13,12 +13,16 @@ body {
     font-size: 1.6rem;
 }
 
+div.placeholder {
+    height: 150px;
+    background-color: black;
+}
+
 div.navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    background-image: url("/background.png");
-    background-size: cover;
+    background-color: black;
 }
 
 .navbar img {
@@ -57,12 +61,11 @@ a {
  */
 
 nav.wrapper{
-    text-align: right;;
-}
-
-.wrapper {
+    text-align: right;
     margin: 0 auto;
     width: 100%;
+    background-image: url("/background.png");
+    background-size: cover;
 }
 
 .sub_menu {
@@ -80,6 +83,7 @@ header li a {
 }
 
 .sub_menu li {
+    z-index: 10;
     width: 200px;
     background-color: #15418c;
 }
@@ -152,13 +156,72 @@ a > i {
 * Images
  */
 
-article {
-    width: 45%;
-    height: auto;
-    margin: 170px 0 10 20px;
+.white {
+    font-weight: bold;
+    background-color: white;
+    opacity: 0.7;
+    padding: 10px;
+}
+.blue {
+    font-weight: bold;
+    background-color: #83a2d9;
+    opacity: 0.7;
+    padding: 10px;
 }
 
-article img {
+section p {
+    display: inline-block;
+}
+
+div.first_to_fourth {
+    width: 95%;
+    margin: 10px auto;
+    border: 1px solid white ;
+}
+
+article.first {
+    display: inline-block;
+    width: 49%;
+    height: auto;
+}
+
+article.first img {
+    width: 100%;
+    height: auto;
+}
+
+article.first p {
+    position: relative;
+    bottom: 5px;
+    margin-top: 0;
+}
+
+article.first p:hover {
+    margin-top: 0;
+    background-color: white;
+    opacity: 1;
+}
+
+div.second_third {
+    float: right;
+    margin-left: 15px;
+    display: inline-block;
+    width: 49%;
+    height: auto;
+    border: 1px solid white;
+}
+
+.second_third img {
+    width: 45%;
+}
+
+article.fourth {
+    float: right;
+    width: 49%;
+    height: auto;
+}
+
+article.fourth img {
     width: 100%;
     height: auto;
 }
